@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+/* 🌐 General Page Styling */
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #343a40;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 🏠 Headings and Text */
+h1, h2, h3 {
+  color: #343a40;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* 🧭 Navbar Styling */
+.navbar {
+  background-color: #212529 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ffca2c !important;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #ffc107 !important;
+}
+
+.nav-link {
+  color: #ddd !important;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffca2c !important;
+  text-decoration: underline;
+}
+
+/* 🍽️ Home Section */
+img.img-fluid {
+  max-width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+img.img-fluid:hover {
+  transform: scale(1.03);
+}
+
+/* 🍕 Menu & Special Menu Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* 🏨 Room Booking */
+button.btn-success {
+  background-color: #28a745 !important;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+button.btn-success:hover {
+  background-color: #218838 !important;
+}
+
+/* 📞 Contact Form */
+form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: 500;
+  color: #343a40;
+}
+
+form button {
+  background-color: #ffca2c !important;
+  color: #212529;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #ffc107 !important;
+  color: #000;
+}
+
+/* 🧾 Container Spacing */
+.container {
+  padding-bottom: 50px;
+}
+
+/* ✨ Utility Classes */
+.text-center {
+  text-align: center !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* 📱 Responsive Fixes */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card img {
+    height: 180px;
   }
-  to {
-    transform: rotate(360deg);
+
+  form {
+    padding: 15px;
   }
+  .contact-card {
+  border-radius: 15px;
+  background: #fffdf8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+p {
+  color: #555;
+  font-size: 1rem;
+}
+.order-card {
+  border-radius: 20px;
+  background: #fffdf8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 800px;
+  margin: auto;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+button.btn-success {
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+
 }
